@@ -1,0 +1,26 @@
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.presentation > div {
+    flex: 1;
+}
+
+.presentation > img {
+    max-width: 100%;
+}
+
+@media(min-width: 45rem) {
+    .presentation {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .presentation.inverse > div {
+        order: -1;
+    }
+}
